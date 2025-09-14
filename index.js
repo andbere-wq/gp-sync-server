@@ -4,7 +4,7 @@ app.use(express.json());
 
 let ultimoEvento = null;
 
-app.post("/evento", (req, res) => {
+app.post("/evento-receptor", (req, res) => {
   ultimoEvento = req.body;
   res.sendStatus(200);
 });
